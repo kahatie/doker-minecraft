@@ -12,7 +12,7 @@ RUN mkdir -p /opt/minecraft \
     && cd /opt/minecraft \
     && java -jar forge-installer.jar --installServer \
     && rm forge-installer.jar \
-    && mv forge*.jar forge-server.jar
+    && mv forge*.jar forge-universal.jar
 
 COPY  eula.txt /opt/minecraft/eula.txt
 COPY minecraft-supervisord.conf /etc/supervisor/conf.d/minercaft-supervisord.conf
