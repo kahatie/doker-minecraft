@@ -14,3 +14,4 @@ RUN mkdir -p /opt/minecraft \
     && rm forge-installer.jar
 
 COPY  eula.txt /opt/minecraft/eula.txt
+COPY minecraft-supervisord.conf /etc/supervisor/conf.d/minercaft-supervisord.conf
