@@ -3,8 +3,8 @@ MAINTAINER kahatie <kahatie@gmail.com>
 
 RUN apt-get update && apt-get install -y\
  curl\
- && apt-get clean\
- && rm -rf /var/lib/apt/lists/*
+ && apt-get clean \
+ && rm -rf /var/lib/apt/lists/* \
  && mkdir -p /opt/minecraft \
  && curl -SL http://files.minecraftforge.net/maven/net/minecraftforge/forge/1.8.9-11.15.1.1762/forge-1.8.9-11.15.1.1762-installer.jar -o /opt/minecraft/forge-installer.jar  \
  && apt-get remove curl \
